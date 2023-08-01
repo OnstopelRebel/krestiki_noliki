@@ -1,11 +1,50 @@
-body {
-  font-size: $base-font-size;
-  font-family: Arial, serif;
-  line-height: 1.5;
-  background: url("../img/photo1.png") no-repeat;
+.game-field {
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-  @include ph {
-    color: tomato;
-    background-color: cornflowerblue;
+.game-field__cell {
+  position: relative;
+  border: 2px solid red;
+  font-size: 24px;
+}
+
+.cross {
+  &:before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    transform: rotate(-45deg) translateY(5%) translateX(-50%);
+    left: 50%;
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 300px;
+    background-color: black;
+    border-radius: 10px;
+    transform: rotate(45deg) translateX(50%) translateY(5%);
+    left: 50%;
+  }
+}
+
+.zero {
+  &:before {
+    position: absolute;
+    content: "";
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 10px solid black;
+    transform: translateX(15%) translateY(15%);
   }
 }
