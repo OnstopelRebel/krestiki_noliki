@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \***********************************/
 /***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\nconst gameField = document.querySelector('.game-field')\r\nconst gameCells = gameField.querySelectorAll('.game-field--cell')\r\nconst sideChoiceX = document.querySelector('.side-choice--x')\r\n\r\n\r\ngameField.addEventListener('click', evt => {\r\n  const gameCellData = evt.target.dataset.cell\r\n  const gameCell = gameField.querySelector(`.game-field__cell--${gameCellData}`)\r\n\r\n  sideChoiceX.checked ? gameCell.classList.toggle('cross') : gameCell.classList.toggle('zero')\r\n\r\n\r\n\r\n\r\n  console.log(gameCell)\r\n})\r\n\r\n\n\n//# sourceURL=webpack://sasstemplate/./src/js/module/listener.js?");
+eval("__webpack_require__.r(__webpack_exports__);\nconst gameField = document.querySelector('.game-field');\r\nconst gameCells = gameField.querySelectorAll('.game-field--cell');\r\nconst sideChoiceX = document.querySelector('.side-choice--x');\r\n\r\ngameField.addEventListener('click', evt => {\r\n  const gameCellData = evt.target.dataset.cell;\r\n  const gameCell = gameField.querySelector(\r\n      `.game-field__cell--${gameCellData}`);\r\n\r\n  sideChoiceX.checked ?\r\n      gameCell.classList.toggle('cross') :\r\n      gameCell.classList.toggle('zero');\r\n\r\n  console.log(gameCell);\r\n});\r\n\n\n//# sourceURL=webpack://sasstemplate/./src/js/module/listener.js?");
 
 /***/ })
 
