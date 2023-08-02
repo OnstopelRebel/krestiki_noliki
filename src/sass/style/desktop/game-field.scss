@@ -1,10 +1,7 @@
-.game-field {
+.game-field__wrapper {
   width: 1000px;
   height: 1000px;
   border: 2px solid black;
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .game-field__cell {

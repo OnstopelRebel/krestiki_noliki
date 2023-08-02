@@ -1,0 +1,10 @@
+.header__main {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: khaki;
+}
+
+.header__title {
+  @include handjet-700(5rem, 5rem);
+  color: darkslategray;
+}
