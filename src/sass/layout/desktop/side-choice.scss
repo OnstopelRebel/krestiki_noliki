@@ -7,3 +7,13 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.side-choice__radios {
+  display: flex;
+  gap: 20px;
+  padding: 2rem;
+}
+
+.side-choice__label {
+  padding-left: 30px;
+}

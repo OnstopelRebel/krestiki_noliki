@@ -1,13 +1,43 @@
 .side-choice__wrapper {
   max-width: 75%;
   border: 1px solid darkslategrey;
+  border-radius: 10px;
 }
 
 .side-choice__title {
-  @include handjet-700(2rem, 3.5rem);
+  @include handjet-700(2.5rem, 3.5rem);
   text-align: center;
 }
 
-.side-choice__radios {
-  padding: 2rem;
+.side-choice__label {
+  position: relative;
 }
+
+.side-choice__control-mark {
+  position: absolute;
+  transform: translateX(-40px) translateY(-25%);
+  width: 30px;
+  height: 30px;
+  border: 2px solid darkslategrey;
+  border-radius: 50%;
+}
+
+.side-choice__control-label {
+  @include handjet-700(1.3rem, 1rem);
+}
+
+.side-choice__button {
+  @include handjet-700(1.5rem, 1rem);
+  background-color: $color-lightblue;
+  border: none;
+  padding: 1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+//Эффекты
+
+.side-choice__input:checked + .side-choice__control-mark {
+  background-color: khaki;
+}
+
