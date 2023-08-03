@@ -1,9 +1,21 @@
 <div class="side-choice">
-    <input type="radio" class="side-choice--x" id="side-choice--x" name="contact" value="x" checked>
-    <label for="side-choice--x">X</label>
+    <div class="side-choice__wrapper">
+        <h2 class="side-choice__title">Выбрать сторону</h2>
+        <div class="side-choice__radios">
 
-    <input type="radio" class="side-choice--x" id="side-choice--0" name="contact" value="0">
-    <label for="side-choice--0">0</label>
+            <label class="side-choice__input side-choice__input--X">
+            <input type="radio" class="visually-hidden" name="side" value="x" checked>
+                <span class="side-choice__control-mark"></span>
+                <span class="side-choice__control-label"><span class="visually-hidden">Играть крестиками</span>
+            </label>
 
-    <button class="side-choice__button" type="button">начать игру</button>
+            <label class="side-choice__input side-choice__input--O">
+                <input type="radio" class="visually-hidden" name="side" value="o">
+                <span class="side-choice__control-mark"></span>
+                <span class="side-choice__control-label"><span class="visually-hidden">Играть ноликами</span></span>
+            </label>
+        </div>
+
+        <button class="side-choice__button" type="button">начать игру</button>
+    </div>
 </div>

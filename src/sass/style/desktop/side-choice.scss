@@ -1,0 +1,13 @@
+.side-choice__wrapper {
+  max-width: 75%;
+  border: 1px solid darkslategrey;
+}
+
+.side-choice__title {
+  @include handjet-700(2rem, 3.5rem);
+  text-align: center;
+}
+
+.side-choice__radios {
+  padding: 2rem;
+}
